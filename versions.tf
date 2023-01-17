@@ -15,14 +15,5 @@ terraform {
       source  = "hashicorp/random"
       version = "3.4.3"
     }
-    # only un-comment if demoing local-exec 
-    # local = {
-    #   source  = "hashicorp/local"
-    #   version = "2.2.3"
-    # }
-    # null = {
-    #   source  = "hashicorp/null"
-    #   version = "3.2.1"
-    # }
   }
 }
