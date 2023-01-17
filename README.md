@@ -10,23 +10,6 @@
 ## **This is what we are going to deploy**
 [![Architecture Overview](./media/palo-vm-series-isolated-deployment.png)](https://www.paloaltonetworks.com/resources/guides/securing-applications-in-aws-isolated-design-deployment-guide)
 
-subscribe to marketplace vm-series ngfw paygo-1
-AMI Alias
- /aws/service/marketplace/prod-hhtxhxwx3jg6k/pan-os-11.0.0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Terraform Providers Used (plugins)
 
 | Plugin | Documentation |
@@ -43,6 +26,12 @@ Demo Description
 > terraform cloud.
 
 ## Agenda
+
+subscribe to marketplace vm-series ngfw paygo-1
+AMI Alias
+ /aws/service/marketplace/prod-hhtxhxwx3jg6k/pan-os-11.0.0
+
+
 0. Local environment setup
    * Install terraform cli
 ```sh
