@@ -34,17 +34,17 @@ variable "wordpress_instance_type" {
 # looking for a local environment variable called TF_VAR_ssh_key_name
 # exporting local environment variables prefixed with TF_VAR_ is just another way to
 # set the values of terraform input variables 
-variable "ssh_key_name" {
-  type = string
-}
+# variable "ssh_key_name" {
+#   type = string
+# }
 # Follow step 0. in README - terraform will set this terraform variable ssh_key_pub by
 # looking for a local environment variable called TF_VAR_ssh_key_pub
 # exporting local environment variables prefixed with TF_VAR_ is just another way to
 # set the values of terraform input variables 
-variable "ssh_key_pub" {
-  type        = string
-  description = "public key material used to authenticate ssh connections to wordpress ec2 instance"
-}
+# variable "ssh_key_pub" {
+#   type        = string
+#   description = "public key material used to authenticate ssh connections to wordpress ec2 instance"
+# }
 # IP Address of SSH Client
 variable "workstation_cidr" {
   type        = string
@@ -52,27 +52,27 @@ variable "workstation_cidr" {
   default     = "0.0.0.0/0"
 }
 # Wordpress Variables
-variable "wp_db_name" {
-  type        = string
-  sensitive   = true
-  default     = "bilhwordpress"
-  description = "database name for wordpress"
-}
-variable "wp_mariadb_user" {
-  type        = string
-  sensitive   = true
-  default     = "bilhwordpress"
-  description = "mariadb user for wordpress"
-}
-variable "wp_mariadb_user_pw" {
-  type        = string
-  sensitive   = true
-  default     = "bilhwordpress"
-  description = "password for the mariadb user for wordpress"
-}
-variable "wp_mariadb_root_pw" {
-  type        = string
-  sensitive   = true
-  default     = "bilhwordpress"
-  description = "root password for mariadb"
-}
+# variable "wp_db_name" {
+#   type        = string
+#   sensitive   = true
+#   default     = "bilhwordpress"
+#   description = "database name for wordpress"
+# }
+# variable "wp_mariadb_user" {
+#   type        = string
+#   sensitive   = true
+#   default     = "bilhwordpress"
+#   description = "mariadb user for wordpress"
+# }
+# variable "wp_mariadb_user_pw" {
+#   type        = string
+#   sensitive   = true
+#   default     = "bilhwordpress"
+#   description = "password for the mariadb user for wordpress"
+# }
+# variable "wp_mariadb_root_pw" {
+#   type        = string
+#   sensitive   = true
+#   default     = "bilhwordpress"
+#   description = "root password for mariadb"
+# }

@@ -59,7 +59,7 @@ resource "aws_ec2_transit_gateway" "centralized" {
 # AZD 10.192.0.0/18
 
 resource "aws_subnet" "security_mgmt_a" {
-  vpc_id            = aws_vpc.security
+  vpc_id            = aws_vpc.security.id
   cidr_block        = "10.100.0.0/24"
   availability_zone = format("%s%s", var.aws_region, "a")
   tags = {
@@ -67,7 +67,7 @@ resource "aws_subnet" "security_mgmt_a" {
   }
 }
 resource "aws_subnet" "security_private_a" {
-  vpc_id            = aws_vpc.security
+  vpc_id            = aws_vpc.security.id
   cidr_block        = "10.100.1.0/24"
   availability_zone = format("%s%s", var.aws_region, "a")
   tags = {
@@ -75,7 +75,7 @@ resource "aws_subnet" "security_private_a" {
   }
 }
 resource "aws_subnet" "security_public_a" {
-  vpc_id            = aws_vpc.security
+  vpc_id            = aws_vpc.security.id
   cidr_block        = "10.100.2.0/24"
   availability_zone = format("%s%s", var.aws_region, "a")
   tags = {
@@ -83,7 +83,7 @@ resource "aws_subnet" "security_public_a" {
   }
 }
 resource "aws_subnet" "security_mgmt_b" {
-  vpc_id            = aws_vpc.security
+  vpc_id            = aws_vpc.security.id
   cidr_block        = "10.100.64.0/24"
   availability_zone = format("%s%s", var.aws_region, "b")
   tags = {
@@ -91,7 +91,7 @@ resource "aws_subnet" "security_mgmt_b" {
   }
 }
 resource "aws_subnet" "security_private_b" {
-  vpc_id            = aws_vpc.security
+  vpc_id            = aws_vpc.security.id
   cidr_block        = "10.100.65.0/24"
   availability_zone = format("%s%s", var.aws_region, "b")
   tags = {
@@ -99,7 +99,7 @@ resource "aws_subnet" "security_private_b" {
   }
 }
 resource "aws_subnet" "security_public_b" {
-  vpc_id            = aws_vpc.security
+  vpc_id            = aws_vpc.security.id
   cidr_block        = "10.100.66.0/24"
   availability_zone = format("%s%s", var.aws_region, "b")
   tags = {
@@ -110,7 +110,7 @@ resource "aws_subnet" "security_public_b" {
 #                    Create and Attach Internet Gateway                        #
 ################################################################################
 resource "aws_internet_gateway" "security" {
-  vpc_id = aws_vpc.security
+  vpc_id = aws_vpc.security.id
   tags = {
     Name = format("%s%s%s%s", var.aws_prefix, var.aws_region, "-security-internet-gateway", "-${random_id.demo_id.id}")
   }
