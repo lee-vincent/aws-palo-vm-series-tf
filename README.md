@@ -2,13 +2,13 @@
 [![AHEAD](https://public-bucket-general.s3.amazonaws.com/AHEAD-logo-bluebackground-180x38px.png)](https://ahead.com)
 
 
-## Using Terraform to orchestrate the deployment of an isolated security VPC and Palo Alto VM-Series NGFW Appliances
+## Using Terraform to orchestrate the deployment of an AWS Transit Gateway enabled hub-and-spoke VPC architecture with centralized security VPC and Palo Alto VM-Series NGFW Appliances
 
 - Author: Vinnie Lee
 - Contact: vinnie.lee@ahead.com
 
 ## **This is what we are going to deploy**
-[![Architecture Overview](./media/palo-vm-series-isolated-deployment.png)](https://www.paloaltonetworks.com/resources/guides/securing-applications-in-aws-isolated-design-deployment-guide)
+[![Architecture Overview](./media/palo-vm-series-centralized-deployment.png)](https://www.paloaltonetworks.com/resources/guides/aws-transit-gateway-deployment-guide)
 
 ## Terraform Providers Used (plugins)
 
