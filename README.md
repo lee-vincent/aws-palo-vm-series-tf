@@ -5,6 +5,9 @@
 
 [![AHEAD](https://public-bucket-general.s3.amazonaws.com/AHEAD-logo-bluebackground-90x19px.png)](https://ahead.com)
 
+
+![Architecture Overview](https://github.com/lee-vincent/aws-palo-vm-series-tf/blob/master/media/GWLB3.png)
+
 subscribe to marketplace vm-series ngfw paygo-1
 AMI Alias
  /aws/service/marketplace/prod-hhtxhxwx3jg6k/pan-os-11.0.0
