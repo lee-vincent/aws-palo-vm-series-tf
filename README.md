@@ -1,12 +1,14 @@
 # Palo Alto VM-Series Terraform Demo
-## Creating, Modifying, and Deleting AWS Infrastructure
+[![AHEAD](https://public-bucket-general.s3.amazonaws.com/AHEAD-logo-bluebackground-180x38px.png)](https://ahead.com)
+
+
+## Using Terraform to orchestrate the deployment of an isolated security VPC and Palo Alto VM-Series NGFW Appliances
+
 - Author: Vinnie Lee
 - Contact: vinnie.lee@ahead.com
 
-[![AHEAD](https://public-bucket-general.s3.amazonaws.com/AHEAD-logo-bluebackground-90x19px.png)](https://ahead.com)
-
-
-![Architecture Overview](https://github.com/lee-vincent/aws-palo-vm-series-tf/blob/master/media/GWLB3.png)
+## **This is what we are going to deploy**
+[![Architecture Overview](./media/palo-vm-series-isolated-deployment.png)](https://www.paloaltonetworks.com/resources/guides/securing-applications-in-aws-isolated-design-deployment-guide)
 
 subscribe to marketplace vm-series ngfw paygo-1
 AMI Alias
